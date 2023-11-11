@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Fundo ligeiramente mais escuro */
+    color: #000; /* Texto preto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #fcfcfc; /* Fundo um pouco mais escuro do formulário */
+    box-shadow: 0 0 10px rgba(110, 9, 9, 0.5); /* Sombra roxa */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h2 {
+    color: #000; /* Texto preto */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #000; /* Linha de baixo nos inputs */
+    transition: border-color 0.3s ease;
+}
+
+button {
+    width: calc(100% - 20px);
+    background-color: #6e0909; /* Cor roxa */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #541414; /* Cor roxa mais escura ao passar o mouse */
+}
+
+/* Barra de Progresso Visual */
+.progress-bar {
+    margin-top: 20px;
+    height: 10px;
+    background-color: #6e0909; /* Cor roxa para o fundo da barra */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #2ecc71; /* Cor de preenchimento verde da barra de progresso */
+    width: 0;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Estilo da modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; 
+    }
+
+    input, button {
+        width: 100%; 
+    }
+}
+
+
